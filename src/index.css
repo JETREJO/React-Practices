@@ -1,0 +1,39 @@
+.raleway-regular {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-light {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.raleway-medium {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.raleway-strong {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+
+  --first-dark-color: #092635;
+  --first-dark-color-lighter: #1B4242;
+  --second-dark-color: #5C8374;
+  --second-dark-color-lighter: #9EC8B9;
+}

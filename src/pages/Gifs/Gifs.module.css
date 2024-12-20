@@ -1,0 +1,5 @@
+.gifsappContainer {
+  background-color: var(--second-dark-color);
+  color: white;
+  height: 100vh;
+}

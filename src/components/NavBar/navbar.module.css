@@ -1,0 +1,31 @@
+.navContainer {
+  background-color: var(--first-dark-color);
+  height: fit-content;
+  padding-left: 50px;
+}
+
+.navContainer ul {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.navContainer li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navContainer a:hover {
+  color: #CCC;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
