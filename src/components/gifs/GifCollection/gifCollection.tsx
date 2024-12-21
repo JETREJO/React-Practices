@@ -1,4 +1,4 @@
-import Loader from "../../../components/loader/loader";
+import Loader from "../../loader/loader";
 import useFetchGifs from "../../../hooks/useFetchGifs";
 import GifItem from "../GifItem/gifItem";
 import styles from "./gifCollection.module.css";

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Navbar from "../../components/NavBar/navbar";
 import styles from "./Gifs.module.css";
-import AddCategory from "./AddCategory/addCategory";
-import GifCollection from "./GifCollection/gifCollection";
+import AddCategory from "../../components/gifs/AddCategory/addCategory";
+import GifCollection from "../../components/gifs/GifCollection/gifCollection";
 
 const GifsApp = () => {
 
