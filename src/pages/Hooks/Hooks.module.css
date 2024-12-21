@@ -1,0 +1,6 @@
+.hooksappContainer {
+  background-color: var(--second-dark-color);
+  color: white;
+  min-height: 100vh;
+  height: fit-content;
+}
