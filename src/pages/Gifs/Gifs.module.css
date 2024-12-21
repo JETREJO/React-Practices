@@ -1,5 +1,26 @@
 .gifsappContainer {
   background-color: var(--second-dark-color);
   color: white;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 5px;
 }
