@@ -7,8 +7,8 @@ const useCounter = (initialValue=10) => {
     setCounter(counter + value);
   };
   
-  function decrement () {
-    setCounter(counter - 1);
+  function decrement ( value=1 ) {
+    setCounter(counter - value);
   };
 
   function reset () {

@@ -1,3 +1,4 @@
+import MultipleHooks from "../../components/hooks/multiplesHooks/multipleHooks";
 import EffectFormWithCustomHook from "../../components/hooks/useEffect/formCustomHook";
 import EffectSimpleForm from "../../components/hooks/useEffect/simpleForm";
 import StateWithCustomHook from "../../components/hooks/useState/customHook";
@@ -14,6 +15,7 @@ const HooksApp = () => {
       <StateWithCustomHook />
       <EffectSimpleForm />
       <EffectFormWithCustomHook />
+      <MultipleHooks />
     </div>
   );
 }
