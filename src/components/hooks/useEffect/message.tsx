@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 
+interface CoordsType {
+  x: number,
+  y: number,
+}
+
 const Message = () => {
 
-  const [coords, setCoords] = useState();
+  const [coords, setCoords] = useState<CoordsType | null>(null);
 
   useEffect(() => {
     console.log("%cMessage mounted!", "color:green");
     window.addEventListener("mousemove", (event) => {
       const {clientX, clientY} = event;
-      setCoords({clientX, clientY});
+      setCoords({x:clientX, y:clientY});
     });
     return () => { console.log("%cMessage UNMOUNTED", "color:red"); }
   }, []);
