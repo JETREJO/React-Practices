@@ -1,3 +1,5 @@
+import { useLayoutEffect, useRef, useState } from "react";
+
 interface PokemonCardProps {
   id: string,
   name: string,
@@ -5,11 +7,29 @@ interface PokemonCardProps {
 }
 
 const PokemonCard: React.FC<PokemonCardProps> = ({id, name, sprites }) => {
+
+  const [titleWidth, setTitleWidth] = useState<number>(0);
+  const h2Ref = useRef<any>();
+
+  /**
+   * Este HOOK se suele utilizar más que nada para, por ejemplo
+   * determinar/calcular los tamaños de un elemento o 
+   * componente después de haberlo renderizado en pantalla
+   */
+  useLayoutEffect(() => {
+    const {height, width} = h2Ref.current.getBoundingClientRect();
+    console.log({height, width});
+    setTitleWidth(width);
+  }, [name]);
+
   return (
     <section>
-      <h2 className="text-capitalize mb-3">
-        #{id} - {name}
-      </h2>
+      <div className="mb-3 d-flex align-items-center">
+        <h2 ref={h2Ref} className="text-capitalize me-5" style={{width:"fit-content", border:"2px dashed blue"}}>
+          #{id} - {name}
+        </h2>
+        <pre>Title Width: { Math.floor(titleWidth) } px | * useLayoutEffect() *</pre>
+      </div>
       {
         sprites.map((sprite) => (
           <img key={sprite} src={sprite} alt={`Sprite ${name}`} />

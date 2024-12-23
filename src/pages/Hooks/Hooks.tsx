@@ -4,6 +4,7 @@ import EffectSimpleForm from "../../components/hooks/useEffect/simpleForm";
 import StateWithCustomHook from "../../components/hooks/useState/customHook";
 import HookState from "../../components/hooks/useState/state";
 import Navbar from "../../components/NavBar/navbar";
+import UseRefHook from "../../components/ref/useRefHook";
 import styles from "./Hooks.module.css";
 
 const HooksApp = () => {
@@ -16,6 +17,7 @@ const HooksApp = () => {
       <EffectSimpleForm />
       <EffectFormWithCustomHook />
       <MultipleHooks />
+      <UseRefHook />
     </div>
   );
 }
