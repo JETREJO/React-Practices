@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import useFetchPokemon from "../../../hooks/useFetchPokemon";
 import useCounter from "../../../hooks/useCounter";
 import PokemonLoader from "./pokemonLoader";
@@ -9,10 +8,6 @@ const MultipleHooks = () => {
   const {counter, decrement, increment} = useCounter(1);
   const fetchURL = `https://pokeapi.co/api/v2/pokemon/${counter}`;
   const {data, isLoading, hasError} = useFetchPokemon(fetchURL);
-
-    useEffect(() => {
-      console.log("Counter: ", counter, fetchURL);
-    }, [counter]);
 
   return (
     <div className="pb-3 pt-3 border-bottom border-warning border-4 ps-3 pe-3">

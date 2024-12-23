@@ -9,6 +9,5 @@ export const getGifs = async (category:string) => {
     title: img.title,
     url: img.images.fixed_height_downsampled.url,
   }));
-  // console.log(" Esta es la respuesta : ", gifs);
   return gifs;
 }

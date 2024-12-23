@@ -17,8 +17,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({id, name, sprites }) => {
    * componente después de haberlo renderizado en pantalla
    */
   useLayoutEffect(() => {
-    const {height, width} = h2Ref.current.getBoundingClientRect();
-    console.log({height, width});
+    const { width } = h2Ref.current.getBoundingClientRect();
     setTitleWidth(width);
   }, [name]);
 
