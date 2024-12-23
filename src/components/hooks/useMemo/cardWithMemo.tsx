@@ -17,7 +17,7 @@ const CardWithMemo = () => {
         <button className="btn btn-primary" type="button" onClick={() => increment(1)}>
           Increment
         </button>
-        <button className="btn btn-primary mt-3" type="button" onClick={() => setShow(!show)}>
+        <button className="btn btn-outline-light mt-3" type="button" onClick={() => setShow(!show)}>
           Show / Hide
         </button>
       </div>
